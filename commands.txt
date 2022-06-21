@@ -1,0 +1,33 @@
+    1  mkdir myrepo
+    2  cd myrepo
+    3  git init
+    4  ls -la .git
+    5  touch newfile
+    6  git add newfile
+    7  git config --global user.email "you@example.com"
+    8  git config --global user.name "Your Name"
+    9  git commit -m "added newfile"
+   10  git branch my1stbranch
+   11  git branch
+   12  git checkout my1stbranch
+   13  git branch
+   14  git checkout -b my1stbranch
+   15  echo 'Here is some text in my newfile.' >> newfile
+   16  cat newfile
+   17  touch readme.md
+   18  git add readme.md
+   19  git status
+   20  git add *
+   21  git status
+   22  git commit -m "added readme.md modified newfile"
+   23  git log
+   24  git revert HEAD --no-edit
+   25  touch goodfile
+   26  git add goodfile
+   27  git commit -m "added goodfile"
+   28  git log
+   29  git checkout master
+   30  git merge my1stbranch
+   31  git log
+   32  git branch -d my1stbranch
+   33  history
